@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jt-ms:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="movingStory.war">
+      <element id="artifact" artifact-name="jt-ms:war exploded" />
+    </root>
+  </artifact>
+</component>
