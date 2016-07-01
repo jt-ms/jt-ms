@@ -1,6 +1,5 @@
 package jt.dao;
 
-import jt.entity.user;
 import org.springframework.stereotype.Repository;
 import org.springframework.jdbc.core.JdbcTemplate;
 

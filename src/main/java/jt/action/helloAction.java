@@ -1,7 +1,6 @@
 package jt.action;
 
 import jt.dao.helloDao;
-import jt.entity.user;
 import jt.utils.printJson;
 import org.springframework.stereotype.Controller;
 
