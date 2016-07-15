@@ -11,12 +11,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/nivo-slider.css" rel="stylesheet">
     <link href="css/default.css" rel="stylesheet">
-    <!--<link href="webjscss/css/picSlide.css" rel="stylesheet">-->
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <link href="webjscss/css/index.css" rel="stylesheet">
+
     <![endif]-->
 </head>
 <body>
@@ -38,9 +34,28 @@
     </div>
 </nav>
     <div class="container">
-    <div class="row">
-        <div class="col-sm-4" style="background-color: #4cae4c">左4</div>
-        <div class="col-sm-8">
+    <div class="row" style="background-color: white">
+        <div class="col-sm-4" >
+            <h4 style="margin-top: 20px;border-left:5px solid #2980B9;padding-left: 5px ">热门标签</h4>
+            <hr style="outline-color: #BDC3C7">
+            <div class="col-sm-4 btn-tips">
+                <button type="button" class="btn btn-default btn-block btn-xs">公 猪</button>
+                <button type="button" class="btn btn-default btn-block btn-xs">仔 猪</button>
+                <button type="button" class="btn btn-default btn-block btn-xs">求 贤</button>
+                <button type="button" class="btn btn-default btn-block btn-xs">合 伙</button>
+            </div>
+            <div class="col-sm-4 btn-tips">
+                <button type="button" class="btn btn-default btn-block btn-xs">求 助</button>
+                <button type="button" class="btn btn-default btn-block btn-xs">出 售</button>
+                <button type="button" class="btn btn-default btn-block btn-xs">猪 舍</button>
+            </div>
+            <div class="col-sm-4 btn-tips">
+                <button type="button" class="btn btn-default btn-block btn-xs">求 购</button>
+                <button type="button" class="btn btn-default btn-block btn-xs">猪 群</button>
+                <button type="button" class="btn btn-default btn-block btn-xs">管 理</button>
+            </div>
+        </div>
+        <div class="col-sm-8 slide-pic">
             <div class="slider-wrapper theme-default">
                 <div class="ribbon"></div>
                 <div id="slider" class="nivoSlider">
@@ -55,16 +70,50 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-3" style="background-color: #2b542c">左边</div>
-        <div class="col-sm-6" style="background-color: #d43f3a">中间</div>
-        <div class="col-sm-3" style="background-color: yellow">右边边</div>
+    <div class="row" style="background-color: white">
+        <div class="col-sm-3">
+            <h4 style="margin-top: 20px;border-left:5px solid #2980B9;padding-left: 5px ">推荐内容</h4>
+            <hr style="outline-color: #BDC3C7">
+            <a href="#">
+                <span class="glyphicon glyphicon-tag"></span>  这是第一条内容
+            </a><br>
+            <a href="#">
+                <span class="glyphicon glyphicon-tag"></span>  这是第二条内容
+            </a><br>
+            <a href="#">
+                <span class="glyphicon glyphicon-tag"></span>我家养了一条金毛
+            </a><br>
+            <a href="#">
+                <span class="glyphicon glyphicon-tag"></span>这个猪怎么这么萌呢
+            </a><br>
+            <a href="#">
+                <span class="glyphicon glyphicon-tag"></span>好吧,我尝试着打30个字,该打些什么内容呢
+            </a><br>
+            <a href="#">
+                <span class="glyphicon glyphicon-tag"></span>今天做了个布局,明天继续
+            </a><br>
+        </div>
+        <div class="col-sm-6">
+            <h4 style="margin-top: 20px;border-left:5px solid #2980B9;padding-left: 5px ">最新发表</h4>
+            <hr style="outline-color: #BDC3C7">
+        </div>
+        <div class="col-sm-3 col-right">
+            <div id="news">
+                <h4 style="margin-top: 10px;border-left:5px solid #2980B9;padding-left: 5px ">热点新闻</h4>
+                <hr style="outline-color: #BDC3C7">
+            </div>
+            <div id="activity">
+                <h4 style="margin-top: 10px;border-left:5px solid #2980B9;padding-left: 5px ">展会&活动</h4>
+                <hr style="outline-color: #BDC3C7">
+            </div>
+        </div>
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.11.1.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
 <script src="js/jquery.nivo.slider.pack.js"></script>
 </body>
 <script type="text/javascript">
@@ -79,7 +128,7 @@
             startSlide: 0, // Set starting Slide (0 index)
             directionNav: true, // Next & Prev navigation
             directionNavHide: true, // Only show on hover
-            controlNav: true, // 1,2,3... navigation
+            controlNav: false, // 1,2,3... navigation
             controlNavThumbs: false, // Use thumbnails for Control Nav
             controlNavThumbsFromRel: false, // Use image rel for thumbs
             controlNavThumbsSearch: '.jpg', // Replace this with...

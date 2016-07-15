@@ -13,13 +13,10 @@
 <div class="row" id="main-body">
     <div class="col-sm-3"></div>
     <div class="col-sm-3" id="body-left">
-        <div class="jumbotron">
-
-            <h1>石头 诚</h1>
-            <hr/>
-            <h3>一块石头 一种坚持 一生无悔</h3>
-            <p>真诚孕育着信任，我们为信任护航</p>
-        </div>
+        <h1 style="color:#122b40;">石头 诚</h1>
+        <hr/>
+        <h3>一块石头 一种坚持 一生无悔</h3>
+        <p>真诚孕育着信任，我们为信任护航</p>
     </div>
     <div class="col-sm-3" id="body-right">
         <div class="btn-group btn-group-justified">
@@ -51,6 +48,7 @@
                     <button type="button" class="btn btn-success btn-block">登陆</button>
                 </div>
             </div>
+            <a href="#">忘记密码?</a>
         </form>
         <form class="form-horizontal" role="form" id="register-form">
             <div class="form-group">
@@ -93,7 +91,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
     $(function(){
-        var Height = $(window).height()+"px";
+        var Height = $(window).height();
         $("body").css("height",Height);
         $("#header").css("height","30%");
         $("#main-body").css("height","60%");
